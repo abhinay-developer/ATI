@@ -1,0 +1,37 @@
+<div class="container-fluid mt-5">
+
+
+    <!-- table>(thead>tr>th*10)+(tbody>tr>td*10) -->
+      <table  class="table table-bordered table-hover">
+          <thead class="table-dark">
+              <tr>
+                  <th>STUDENT ID</th>
+                  <th>USERNAME</th>
+                  <th>EMAIL</th>
+                  <th>PASSWORD</th>
+                  <th>MOBILE NO</th>
+                  <th>DOB</th>
+                  <th>ADDRESS</th>
+                  <th>GENDER</th>
+                  <th>CREATED DATE</th>
+                  <th>UPDATED DATE</th>
+                  
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let student of studentArr">
+                  <td>{{student.STUDENT_ID}}</td>
+                  <td>{{student.USERNAME}}</td>
+                  <td>{{student.EMAIL}}</td>
+                  <td>{{student.PASSWORD}}</td>
+                  <td>{{student.MOBILE_NUMBER}}</td>
+                  <td>{{student.DOB}}</td>
+                  <td>{{student.ADDRESS}}</td>
+                  <td>{{student.GENDER}}</td>
+                 
+                  <td>{{student.CREATED_DATE}}</td>
+                  <td>{{student.UPDATED_DATE}}</td>
+              </tr>
+          </tbody>
+      </table>
+</div>
